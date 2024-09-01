@@ -1,0 +1,158 @@
+/* Default theme is light */
+body {
+    background-image: url('images/bg.jpg'); /* URL to your background image */
+    background-size: 100%; /* Slightly smaller background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating of the background image */
+    color: black; /* Text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adjust text and container for better readability */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for the form container */
+    color: black; /* Text color inside the form container */
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
+}
+
+/* Container hover effect */
+.form-group {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for movement and shadow */
+}
+
+/* Form-group hover and focus effect */
+.form-group:hover,
+.form-group:focus-within {
+    transform: translateY(-10px); /* Move the form element up by 10px */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for a lifted look */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Light border for form fields */
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effect for input fields */
+}
+
+/* Input field hover and focus effect */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="date"]:hover,
+select:hover,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    transform: translateY(-5px); /* Move the input element up by 5px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for a lifted look */
+}
+
+/* Styling for the submit button */
+button[type="submit"] {
+    background-color: #007bff; /* Bootstrap blue for button background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Submit button hover and focus effect */
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-5px); /* Move the button up by 5px */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for a lifted look */
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.required {
+    color: red;
+}
+
+ul#passwordRequirements {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+ul#passwordRequirements li {
+    margin-bottom: 5px;
+}
+
+ul#passwordRequirements li.invalid {
+    color: red;
+}
+
+ul#passwordRequirements li.valid {
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Styling for the phone number container */
+.phone-container {
+    display: flex;
+    align-items: center;
+}
+
+.phone-container select {
+    flex: 1;
+    margin-right: 10px; /* Space between country code and phone number input */
+}
+
+.phone-container input {
+    flex: 2;
+}
+
+/* Styling for the file upload container */
+.file-container {
+    display: flex;
+    align-items: center;
+}
+
+.file-container input[type="file"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
