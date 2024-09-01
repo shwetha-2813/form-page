@@ -1,6 +1,6 @@
 /* Default theme is light */
 body {
-    background-image: url('images/bg.jpg'); /* URL to your background image */
+    background-image: url('bg.jpg'); /* URL to your background image */
     background-size: 100%; /* Slightly smaller background image */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent repeating of the background image */
